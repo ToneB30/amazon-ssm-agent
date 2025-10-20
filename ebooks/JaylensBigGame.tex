@@ -1,0 +1,172 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Universal Preamble Block ---
+% Sets margins and utilizes fontspec for modern font handling
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default font to Noto Sans for clean, legible typography
+\babelfont{rm}{Noto Sans}
+% --- End Universal Preamble Block ---
+
+% Packages for custom headers and page breaks
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{parskip} % For proper paragraph spacing
+
+% Set up custom page style
+\pagestyle{fancy}
+\fancyhead{} % Clear default headers
+\fancyfoot{} % Clear default footers
+
+% Custom Header: Story Title and Page Number
+\fancyhead[C]{\textbf{Jaylen’s Big Game} \quad | \quad Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{14.5pt}
+
+% Suppress section numbering
+\setcounter{secnumdepth}{0}
+
+\title{\textbf{Jaylen's Big Game: A Basketball Story About Courage, Teamwork \& Believing in Yourself}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle % Generates the title page
+\thispagestyle{empty} % Removes headers/footers from the title page
+
+% Start the story content with a new page and reset the counter
+\clearpage
+\setcounter{page}{1}
+
+% --- Page Structure Helper Macro ---
+% Defines a clean structure for each page with a consistent illustration placeholder.
+\newcommand{\StoryPage}[3]{%
+    \section*{#1}
+    \begin{figure}[htbp]
+      \centering
+      % Placeholder box for the illustration (approx. 80% of text width)
+      \framebox{\parbox{0.8\textwidth}{\centering
+        \vspace{3cm}
+        \textbf{ILLUSTRATION HERE} \\
+        \small\textit{#2}
+        \vspace{3cm}
+      }}
+      \caption*{Illustration: #2}
+    \end{figure}
+    
+    #3
+    \clearpage
+}
+
+% =========================================================
+%                         STORY PAGES
+% =========================================================
+
+\StoryPage{Page 1 – Meet Jaylen}{Jaylen smiling, dribbling the basketball outside his house at sunrise.}
+{
+Jaylen loved basketball more than anything. Every morning before school, he grabbed his ball, dribbled down the driveway, and dreamed of making the winning shot one day.
+}
+
+\StoryPage{Page 2 – Big Dreams}{Jaylen standing on the court, eyes focused on the hoop, with thought bubbles showing his dream of scoring a big basket.}
+{
+Jaylen wanted to be the best player on his team, but sometimes he got nervous. “What if I miss?” he would think. But then he’d take a deep breath and tell himself, “Believe, Jaylen. You got this.”
+}
+
+\StoryPage{Page 3 – Practice Time}{Jaylen practicing shots in the fading light, sweat on his forehead, with his mom watching.}
+{
+After school, Jaylen practiced every day. He worked on his dribble, his jump shot, and his layups—even when it got dark. His mom smiled from the porch, proud of his effort.
+}
+
+\StoryPage{Page 4 – The Challenge}{Jaylen and his teammates listening to Coach Mike in the gym, all excited.}
+{
+One day, Coach Mike announced a big game. “The Wildcats vs. The Rockets this Saturday!” Jaylen’s heart jumped. “This is my chance!” he said, holding his basketball tight.
+}
+
+\StoryPage{Page 5 – Teamwork Talk}{Coach Mike kneeling, explaining teamwork while Jaylen and teammates listen closely.}
+{
+Coach reminded everyone, “Basketball is not just about scoring—it’s about helping your team.” Jaylen nodded. He promised to pass more, cheer louder, and lift up his teammates.
+}
+
+\StoryPage{Page 6 – The Healthy Start}{Jaylen smiling at the dinner table with a plate of healthy food and a water bottle beside him.}
+{
+That night, Jaylen’s mom cooked grilled chicken, brown rice, and broccoli. “Fuel your body like a champion,” she said. Jaylen ate every bite, knowing strong bodies need strong food.
+}
+
+\StoryPage{Page 7 – Early Morning Hustle}{Jaylen jogging around the outdoor basketball court at sunrise.}
+{
+The next morning, Jaylen woke up early to stretch and run laps around the court. He knew that champions don’t just dream—they train.
+}
+
+\StoryPage{Page 8 – Doubts Creep In}{Jaylen sitting on the bench looking down, Coach Mike’s hand on his shoulder.}
+{
+At practice, Jaylen missed a few shots. He sighed, “Maybe I’m not good enough.” Coach Mike walked over and said, “Jaylen, even the best players miss sometimes. What matters is getting back up.”
+}
+
+\StoryPage{Page 9 – Believe Again}{Close-up of Jaylen’s determined face as he dribbles again confidently.}
+{
+Jaylen smiled and stood up. He dribbled the ball again and whispered, “I believe in me.” He felt his courage come back—one bounce at a time.
+}
+
+\StoryPage{Page 10 – Game Day!}{Jaylen on the court with teammates warming up, crowd in the stands.}
+{
+The gym buzzed with excitement. Parents cheered, sneakers squeaked, and the scoreboard shined. Jaylen tied his shoes tight and whispered, “Time to play my heart out.”
+}
+
+\StoryPage{Page 11 – The First Half}{Jaylen passing the ball to a teammate mid-game.}
+{
+Jaylen played with heart—he passed, defended, and scored once. Even when the other team took the lead, he didn’t give up.
+}
+
+\StoryPage{Page 12 – The Lesson in Losing}{Team huddled together with hands in the middle, shouting “Let’s go Wildcats!”}
+{
+At halftime, The Wildcats were behind. Jaylen looked tired but determined. Coach said, “We don’t quit. Win or lose, we play with courage and teamwork.”
+}
+
+\StoryPage{Page 13 – Team Spirit}{Jaylen clapping and high-fiving a teammate who just made a basket.}
+{
+Jaylen cheered on his friends when they scored. He learned that being a great teammate feels even better than being the best player.
+}
+
+\StoryPage{Page 14 – The Big Moment}{Jaylen jumping mid-air, ball going through the hoop, crowd cheering.}
+{
+With one minute left, Jaylen got the ball. The crowd shouted, “Shoot, Jaylen!” He took a deep breath, aimed, and—swish!—the ball went in!
+}
+
+\StoryPage{Page 15 – Victory!}{Team lifting Jaylen up as they celebrate together.}
+{
+The Wildcats won! But even more important, Jaylen learned something: Winning feels good—but believing in yourself feels great.
+}
+
+\StoryPage{Page 16 – Coach’s Words}{Coach handing Jaylen a “Player of the Game” ribbon.}
+{
+After the game, Coach Mike smiled. “Jaylen, I’m proud of your heart. Keep working hard, and you’ll keep growing—on and off the court.”
+}
+
+\StoryPage{Page 17 – Back to Practice}{Jaylen helping another kid learn to dribble, both smiling.}
+{
+The next day, Jaylen was back on the court. He practiced, laughed, and encouraged his teammates. He knew that champions are made by what they do every day.
+}
+
+\StoryPage{Page 18 – Healthy Habits}{Jaylen at a lunch table with fruit, water, and a basketball beside him.}
+{
+Jaylen packed fruit and water for lunch and avoided soda. He said, “Healthy foods help me jump higher and run faster!”
+}
+
+\StoryPage{Page 19 – Sharing the Message}{Jaylen standing in front of classmates holding a basketball, talking proudly.}
+{
+At school, Jaylen told his friends, “Believe in yourself, eat right, and never quit—even when it’s hard.” Everyone nodded, inspired by Jaylen’s story.
+}
+
+\StoryPage{Page 20 – Jaylen’s Promise}{Jaylen smiling, holding his basketball by the window, moonlight shining in.}
+{
+That night, Jaylen looked out his window at the stars. He whispered, “Tomorrow, I’ll work even harder. Because I believe in me.”
+}
+
+\end{document}
